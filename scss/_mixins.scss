@@ -1,0 +1,35 @@
+@mixin flex-col-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@mixin flex-around {
+  display: flex;
+  justify-content: space-around;
+}
+
+@mixin flexDirection($direction) {
+  display: flex;
+  flex-direction: $direction;
+}
+
+/*NO SE SI VA ACA*/
+
+@mixin media-md {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin media-lg {
+  @media (min-width: 992px) {
+    @content;
+  }
+}
+
+@mixin media-xxl {
+  @media (min-width: 1400px) {
+    @content;
+  }
+}

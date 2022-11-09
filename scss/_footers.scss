@@ -1,0 +1,19 @@
+footer {
+  background: map-get($fondos, fondo-1);
+  text-align: center;
+  color: map-get($color-texto, text-1);
+  padding: 1rem 0;
+  margin-top: 3rem;
+  font-weight: lighter;
+
+  .footer__iconos {
+    color: map-get($color-texto, text-1);
+  }
+
+  .derechos__reservados {
+    .ig__Natalia {
+      color: map-get($color-texto, text-1);
+      text-decoration: none;
+    }
+  }
+}

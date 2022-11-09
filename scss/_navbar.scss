@@ -1,0 +1,16 @@
+.container {
+  background: map-get($fondos, fondo-1);
+  text-align: center;
+  padding: 1rem 0;
+
+  .nav {
+    &___list {
+      @include flex-around;
+
+      .nav__link {
+        color: map-get($color-texto, text-1);
+        text-decoration: none;
+      }
+    }
+  }
+}

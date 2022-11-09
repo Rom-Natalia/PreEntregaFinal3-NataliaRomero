@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/*NO SE SI VA ACA*/
+.container {
+  background: black;
+  text-align: center;
+  padding: 1rem 0;
+}
+.container .nav___list {
+  display: flex;
+  justify-content: space-around;
+}
+.container .nav___list .nav__link {
+  color: white;
+  text-decoration: none;
+}
+
+.container .row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5rem;
+  align-items: center;
+}
+.container .nav {
+  padding-right: 5rem;
+}
+.container .nav .nav___list {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  text-align: right;
+  padding: 1 rem;
+}
+.container .nav .nav___list .nav__link {
+  padding-right: 1rem;
+  text-align: center;
+  margin: 0 10px 0 0;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.conteiner__home {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  margin: 0 auto;
+  max-width: 1320px;
+}
+.conteiner__home .imagen__puente {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  margin-left: 8rem;
+  height: 580px;
+  width: 90%;
+  border-radius: 5px;
+  box-shadow: 0px 10px 10px -6px black;
+}
+.conteiner__home .intro__section {
+  display: flex;
+}
+.conteiner__home .intro__section .info__section2 {
+  width: 40%;
+  padding: 2rem 5rem 0 8rem;
+}
+.conteiner__home .intro__section .imagen__compu {
+  width: 50%;
+  margin-bottom: 2rem;
+  border-radius: 5px;
+  box-shadow: 0px 10px 10px -6px black;
+}
+.conteiner__home .intro__section2 {
+  display: flex;
+}
+.conteiner__home .intro__section2 .info__section3 {
+  width: 40%;
+  padding: 2rem 5rem 0 8rem;
+}
+.conteiner__home .intro__section2 .info__section3 .boton__inspirate {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 5px 3px;
+  cursor: pointer;
+  background-color: black;
+  border-radius: 5px;
+}
+.conteiner__home .intro__section2 .imagen__create {
+  width: 50%;
+  height: 20%;
+  border-radius: 5px;
+  box-shadow: 0px 10px 10px -6px black;
+}
+
+footer {
+  background: black;
+  text-align: center;
+  color: white;
+  padding: 1rem 0;
+  margin-top: 3rem;
+  font-weight: lighter;
+}
+footer .footer__iconos {
+  color: white;
+}
+footer .derechos__reservados .ig__Natalia {
+  color: white;
+  text-decoration: none;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+/*# sourceMappingURL=style.css.map */
