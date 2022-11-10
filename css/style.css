@@ -9,13 +9,31 @@
   text-align: center;
   padding: 1rem 0;
 }
-.container .nav___list {
+.container .row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5rem;
+  align-items: center;
+}
+.container .nav {
+  padding-right: 5rem;
+}
+.container .nav .nav___list {
   display: flex;
   justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  text-align: right;
+  padding: 1 rem;
 }
-.container .nav___list .nav__link {
+.container .nav .nav___list .nav__link {
   color: white;
   text-decoration: none;
+  padding-right: 1rem;
+  text-align: center;
+  margin: 0 10px 0 0;
+  text-transform: uppercase;
 }
 .container .hamburguer__menu {
   display: none;
@@ -36,31 +54,6 @@
   text-decoration: none;
   font-size: 17px;
   display: block;
-}
-
-.container .row {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 5rem;
-  align-items: center;
-}
-.container .nav {
-  padding-right: 5rem;
-}
-.container .nav .nav___list {
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-  text-align: right;
-  padding: 1 rem;
-}
-.container .nav .nav___list .nav__link {
-  padding-right: 1rem;
-  text-align: center;
-  margin: 0 10px 0 0;
-  color: white;
-  text-transform: uppercase;
-  text-decoration: none;
 }
 
 .conteiner__home {

@@ -3,13 +3,30 @@
   text-align: center;
   padding: 1rem 0;
 
+  .row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5rem;
+    align-items: center;
+  }
+
   .nav {
-    &___list {
+    padding-right: 5rem;
+    .nav___list {
       @include flex-around;
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+      text-align: right;
+      padding: 1 rem;
 
       .nav__link {
         color: map-get($color-texto, text-1);
         text-decoration: none;
+        padding-right: 1rem;
+        text-align: center;
+        margin: 0 10px 0 0;
+        text-transform: uppercase;
       }
     }
   }
