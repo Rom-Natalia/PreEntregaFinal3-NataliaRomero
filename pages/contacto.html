@@ -10,18 +10,8 @@
       type="image/x-icon"
     />
 
-    <!-- Bootstrap -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-      crossorigin="anonymous"
-    />
-
     <!--mi CSS-->
     <link rel="stylesheet" href="../css/style.css" />
-
-    <!--google fonts poppins - LO IMPORTO DESDE CSS PORQUE BOOTSTRAP NO LO TOMA-->
 
     <!--Fontawesome-->
     <link
@@ -37,66 +27,68 @@
   <body>
     <!--empieza la barra de menu-->
     <header>
-      <nav class="navbar navbar-expand-lg text-bg-black shadow">
-        <div class="container-fluid mx-5">
-          <a class="navbar-brand" href="../index.html">
-            <img class="w-25" src="../imagenes/Aukel blanco.png" alt=""
+      <div class="container">
+        <div class="row">
+          <a class="logo__izquierdo" href="../index.html"
+            ><img
+              class="logo__imagen"
+              src="../imagenes/Aukel blanco.png"
+              alt="aukel"
+              width="150"
           /></a>
-          <!-- Menu hamburguesa -->
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="collapse navbar-collapse justify-content-end"
-            id="navbarSupportedContent"
-          >
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item fs-4 px-3">
-                <a
-                  class="nav-link link-light active"
-                  aria-current="page"
-                  href="./pages/nosotros.html"
-                  >Nosotros</a
+          <!--empieza la lista de menu-->
+          <nav class="nav">
+            <ul class="nav___list">
+              <li class="nav__item">
+                <a class="nav__link" href="/pages/nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav___list">
+                <a class="nav__link" href="./pages/equipo.html">Equipo</a>
+              </li>
+              <li>
+                <a class="nav__link" href="./pages/servicios.html">Servicios</a>
+              </li>
+              <li class="nav___list">
+                <a class="nav__link" href="./pages/inspiracion.html"
+                  >Inspiracion</a
                 >
               </li>
-              <li class="nav-item fs-4 px-3">
-                <a class="nav-link link-light" href="./pages/equipo.html"
-                  >Equipo</a
-                >
-              </li>
-              <li class="nav-item fs-4 px-3">
-                <a class="nav-link link-light" href="./pages/servicios.html"
-                  >Servicios</a
-                >
-              </li>
-              <li class="nav-item fs-4 px-3">
-                <a class="nav-link link-light" href="./pages/inspiracion.html"
-                  >Inspiración</a
-                >
-              </li>
-              <li class="nav-item fs-4 px-3">
-                <a class="nav-link link-light" href="./pages/contacto.html"
-                  >Contacto</a
-                >
+              <li class="nav___list">
+                <a class="nav__link" href="./pages/contacto.html">Contacto</a>
               </li>
             </ul>
+          </nav>
+
+          <div class="hamburguer__menu">
+            <div id="myLinks">
+              <a href="./nosotros.html">Nosotros</a>
+              <a href="./pages/equipo.html">Equipo</a>
+              <a href="./pages/servicios.html">Servicios</a>
+              <a href="./pages/inspiracion.html">Inspiración</a>
+              <a href="./pages/contacto.html">Contacto</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+            <script>
+              function myFunction() {
+                var x = document.getElementById("myLinks");
+                if (x.style.display === "block") {
+                  x.style.display = "none";
+                } else {
+                  x.style.display = "block";
+                }
+              }
+            </script>
           </div>
         </div>
-      </nav>
+      </div>
     </header>
 
     <main class="main__contacto">
-      <div class="conteiner">
-        <h1 class="h1___subtitulos">CONTACTO</h1>
+      <h1 class="h1__subtitulos">CONTACTO</h1>
 
+      <div class="contacto__conteiner">
         <div class="contenedores">
           <iframe
             class="contenedores__mapa"
@@ -109,76 +101,53 @@
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
 
-          <form class="contenedores__formulario" action="">
-            <label for="nombre">Nombre</label>
+          <div class="contacto__formulario">
+            <label
+              for="exampleFormControlInput1"
+              class="contacto__formulario__completar"
+              >Email</label
+            >
             <input
-              type="text"
-              name="nombre"
-              placeholder="Escriba su nombre"
-              id="nombre"
+              type="email"
+              class="form-control"
+              id="exampleFormControlInput1"
+              placeholder="name@example.com"
             />
-
-            <label for="E-mai">E-mai</label>
-            <input
-              type="text"
-              name="E-mai"
-              placeholder="Escriba su E-mail"
-              id="E-mai"
-            />
-
-            <label for="mensaje">Mensaje</label>
-
+          </div>
+          <div class="contacto__formulario">
+            <label for="exampleFormControlTextarea1" class="form-label"
+              >Dejanos tu consulta</label
+            >
             <textarea
-              name="mensaje"
-              id="mensaje"
-              cols="30"
-              rows="10"
+              class="contacto__formulario__completar"
+              id="exampleFormControlTextarea1"
+              rows="3"
             ></textarea>
-
-            <input type="submit" value="Enviar" />
-          </form>
+          </div>
         </div>
       </div>
     </main>
 
-    <footer class="footer pt-1 bg-black b-0 w-100 mt-5">
-      <div class="footer-sm text-white">
-        <div class="container">
-          <div class="row py-4 text-center text-white">
-            <div class="col-lg-5 col-md-6 mb-md-0 fw-semibold">
-              Buscanos en las redes
-            </div>
-            <div class="col-lg-7 col-md-6">
-              <a href=""><i class="fab fa-facebook text-white mx-2"></i></a>
-              <a href=""><i class="fab fa-twitter text-white mx-2"></i></a>
-              <a href=""><i class="fab fa-instagram text-white mx-2"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="footer-bottom py-5">
-        <div class="container">
-          <div class="row text-center text-white">
-            <div class="col-12">
-              <div class="footer-bottom__copy fw-semibold">
-                &copy; Copyright 2022 | AukeL | Todos los derechos reservados |
-                Creada por
-                <a
-                  class="text-decoration-none text-white fw-light"
-                  href="https://www.instagram.com/"
-                  >Romero Natalia</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
+    <footer>
+      <div class="buscanos__redes">Buscanos en las redes</div>
+
+      <!--aca van logos de redes-->
+      <a class="footer__iconos" href="#"
+        ><i class="fa-brands fa-instagram"></i
+      ></a>
+      <a class="footer__iconos" href="#"
+        ><i class="fa-brands fa-facebook-f"></i
+      ></a>
+      <a class="footer__iconos" href="#"
+        ><i class="fa-brands fa-behance"></i
+      ></a>
+
+      <div class="derechos__reservados">
+        © Copyright 2022 | AukeL | Todos los derechos reservados | Creada por
+        <a class="ig__Natalia" href="https://www.instagram.com/"
+          >Romero Natalia</a
+        >
       </div>
     </footer>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
-      integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>
