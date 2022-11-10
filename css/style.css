@@ -132,6 +132,12 @@ main {
   flex: 1;
 }
 
+.h1__subtitulos {
+  font-weight: 200;
+  letter-spacing: 2px;
+  margin: 2rem 0 1rem 4rem;
+}
+
 .equipo__cards__container {
   margin-bottom: 3rem;
   justify-content: center;
@@ -145,6 +151,16 @@ main {
   display: flex;
   flex: 0 0 auto;
   width: 25%;
+}
+.equipo__cards__container .equipo__card .equipo__card__individual {
+  margin: 0.5rem;
+  flex-shrink: 1;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
 }
 
 @media screen and (max-width: 968px) {

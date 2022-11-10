@@ -13,8 +13,6 @@
     <!--mi CSS-->
     <link rel="stylesheet" href="../css/style.css" />
 
-    <!--google fonts poppins - LO IMPORTO DESDE CSS PORQUE BOOTSTRAP NO LO TOMA-->
-
     <!--Fontawesome-->
     <link
       rel="stylesheet"
@@ -28,70 +26,71 @@
   </head>
   <body>
     <header>
-      <!-- COMIENZA LA NAV BAR -->
-      <nav class="navbar navbar-expand-lg text-bg-black shadow">
-        <div class="container-fluid mx-5">
-          <a class="navbar-brand" href="../index.html">
-            <img class="w-25" src="../imagenes/Aukel blanco.png" alt=""
+      <div class="container">
+        <div class="row">
+          <a class="logo__izquierdo" href="../index.html"
+            ><img
+              class="logo__imagen"
+              src="../imagenes/Aukel blanco.png"
+              alt="aukel"
+              width="150"
           /></a>
-          <!-- Menu hamburguesa -->
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="collapse navbar-collapse justify-content-end"
-            id="navbarSupportedContent"
-          >
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item fs-4 px-3">
-                <a
-                  class="nav-link link-light active"
-                  aria-current="page"
-                  href="./nosotros.html"
-                  >Nosotros</a
+          <!--empieza la lista de menu-->
+          <nav class="nav">
+            <ul class="nav___list">
+              <li class="nav__item">
+                <a class="nav__link" href="/pages/nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav___list">
+                <a class="nav__link" href="./pages/equipo.html">Equipo</a>
+              </li>
+              <li>
+                <a class="nav__link" href="./pages/servicios.html">Servicios</a>
+              </li>
+              <li class="nav___list">
+                <a class="nav__link" href="./pages/inspiracion.html"
+                  >Inspiracion</a
                 >
               </li>
-              <li class="nav-item fs-4 px-3">
-                <a class="nav-link link-light" href="./equipo.html">Equipo</a>
-              </li>
-              <li class="nav-item fs-4 px-3">
-                <a class="nav-link link-light" href="./servicios.html"
-                  >Servicios</a
-                >
-              </li>
-              <li class="nav-item fs-4 px-3">
-                <a class="nav-link link-light" href="./inspiracion.html"
-                  >Inspiración</a
-                >
-              </li>
-              <li class="nav-item fs-4 px-3">
-                <a class="nav-link link-light" href="./contacto.html"
-                  >Contacto</a
-                >
+              <li class="nav___list">
+                <a class="nav__link" href="./pages/contacto.html">Contacto</a>
               </li>
             </ul>
+          </nav>
+
+          <div class="hamburguer__menu">
+            <div id="myLinks">
+              <a href="#news">News</a>
+              <a href="#contact">Contact</a>
+              <a href="#about">About</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+            <script>
+              function myFunction() {
+                var x = document.getElementById("myLinks");
+                if (x.style.display === "block") {
+                  x.style.display = "none";
+                } else {
+                  x.style.display = "block";
+                }
+              }
+            </script>
           </div>
         </div>
-      </nav>
+      </div>
     </header>
 
     <main>
-      <h1 class="h1___subtitulos fst-normal">EQUIPO</h1>
+      <h1 class="h1__subtitulos">EQUIPO</h1>
 
       <!-- COMIENZAN LAS CARDS -->
 
       <section class="conteiner">
         <div class="equipo__cards__container">
           <article class="equipo__card">
-            <div class="card flex-shrink-1 col-12 m-2 shadow">
+            <div class="equipo__card__individual">
               <img
                 src="../imagenes/hombre1.jpg"
                 class="card-img-top"
@@ -198,5 +197,7 @@
         </div>
       </div>
     </footer>
+
+  </body>
   </body>
 </html>
