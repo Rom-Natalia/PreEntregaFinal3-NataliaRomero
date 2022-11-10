@@ -43,4 +43,34 @@
   }
 
   /*SECCION INSPIRACION*/
+  .container__inspiracion {
+    .container__galeria {
+      .container__galeria__paisajes {
+        width: 100%;
+      }
+    }
+  }
+
+  /*SECCION SERVICIOS*/
+  .servicios__imagenes {
+    width: 100%;
+    height: auto;
+  }
+
+  /*SECCION NOSOTROS*/
+  .nosotros__imagen__puente {
+    height: auto;
+  }
+  .nosotros__intro__section {
+    flex-direction: column-reverse;
+    .nosotros__info__section {
+      width: 100%;
+    }
+    .nosotros__imagen__section {
+      width: 100%;
+    }
+  }
+  .nosotros__intro__section.inspirarte {
+    flex-direction: column-reverse;
+  }
 }

@@ -10,18 +10,8 @@
       type="image/x-icon"
     />
 
-    <!-- Bootstrap -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-      crossorigin="anonymous"
-    />
-
     <!--mi CSS-->
     <link rel="stylesheet" href="../css/style.css" />
-
-    <!--google fonts poppins - LO IMPORTO DESDE CSS PORQUE BOOTSTRAP NO LO TOMA-->
 
     <!--Fontawesome-->
     <link
@@ -36,103 +26,140 @@
   </head>
   <body>
     <header>
-      <!-- COMIENZA LA NAV BAR -->
-      <nav class="navbar navbar-expand-lg text-bg-black shadow">
-        <div class="container-fluid mx-5">
-          <a class="navbar-brand" href="../index.html">
-            <img class="w-25" src="../imagenes/Aukel blanco.png" alt=""
+      <div class="container">
+        <div class="row">
+          <a class="logo__izquierdo" href="../index.html"
+            ><img
+              class="logo__imagen"
+              src="../imagenes/Aukel blanco.png"
+              alt="aukel"
+              width="150"
           /></a>
-          <!-- Menu hamburguesa -->
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="collapse navbar-collapse justify-content-end"
-            id="navbarSupportedContent"
-          >
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item fs-4 px-3">
-                <a
-                  class="nav-link link-light active"
-                  aria-current="page"
-                  href="./nosotros.html"
-                  >Nosotros</a
-                >
+          <!--empieza la lista de menu-->
+          <nav class="nav">
+            <ul class="nav___list">
+              <li class="nav__item">
+                <a class="nav__link" href="./nosotros.html">Nosotros</a>
               </li>
-              <li class="nav-item fs-4 px-3">
-                <a class="nav-link link-light" href="./equipo.html">Equipo</a>
+              <li class="nav___list">
+                <a class="nav__link" href="./equipo.html">Equipo</a>
               </li>
-              <li class="nav-item fs-4 px-3">
-                <a class="nav-link link-light" href="./servicios.html"
-                  >Servicios</a
-                >
+              <li>
+                <a class="nav__link" href="./servicios.html">Servicios</a>
               </li>
-              <li class="nav-item fs-4 px-3">
-                <a class="nav-link link-light" href="./inspiracion.html"
-                  >Inspiración</a
-                >
+              <li class="nav___list">
+                <a class="nav__link" href="./inspiracion.html">Inspiracion</a>
               </li>
-              <li class="nav-item fs-4 px-3">
-                <a class="nav-link link-light" href="./contacto.html"
-                  >Contacto</a
-                >
+              <li class="nav___list">
+                <a class="nav__link" href="./contacto.html">Contacto</a>
               </li>
             </ul>
+          </nav>
+
+          <div class="hamburguer__menu">
+            <div id="myLinks">
+              <a href="./nosotros.html">Nosotros</a>
+              <a href="./equipo.html">Equipo</a>
+              <a href="./servicios.html">Servicios</a>
+              <a href="./inspiracion.html">Inspiración</a>
+              <a href="./contacto.html">Contacto</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+            <script>
+              function myFunction() {
+                var x = document.getElementById("myLinks");
+                if (x.style.display === "block") {
+                  x.style.display = "none";
+                } else {
+                  x.style.display = "block";
+                }
+              }
+            </script>
           </div>
         </div>
-      </nav>
+      </div>
     </header>
 
     <main>
-      <h1 class="h1___subtitulos">NOSOTROS</h1>
+      <h1 class="h1__subtitulos">NOSOTROS</h1>
+      <iframe
+        width="100%"
+        height="600px"
+        src="https://www.youtube.com/embed/2YEm5j2B3AQ?rel=0&autoplay=1&showinfo=0&controls=0&loop=1"
+        title=""
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+
+      <section class="nosotros__intro__section">
+        <div class="nosotros__info__section">
+          <h1>Sobre nosotros</h1>
+          <!--descripcion rapida de lo que hacemos-->
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+            exercitationem adipisci nam quis asperiores. Rem maiores possimus
+            natus nemo, obcaecati ducimus delectus debitis vero totam fugiat
+            dolor qui dolore eum!Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Dolores exercitationem adipisci nam quis
+            asperiores. Rem maiores possimus natus nemo, obcaecati ducimus
+            delectus debitis vero totam fugiat dolor qui dolore eum!
+          </p>
+        </div>
+        <img
+          class="nosotros__imagen__section"
+          src="../imagenes/nosotros.jpeg"
+          alt=""
+        />
+      </section>
+
+      <section class="nosotros__intro__section inspirarte">
+        <div class="nosotros__info__section">
+          <h2>Ideología</h2>
+          <!--descripcion rapida de inspiracion-->
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quidem
+            nobis porro odit minima in sit adipisci ipsam numquam recusandae
+            repudiandae, velit dolore! Suscipit quos, non expedita quod quasi
+            commodi.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Dolores exercitationem adipisci nam quis asperiores. Rem maiores
+            possimus natus nemo, obcaecati ducimus delectus debitis vero totam
+            fugiat dolor qui dolore eum!
+          </p>
+          <a href="../pages/equipo.html"
+            ><button class="boton__inspirate">Equipo</button></a
+          >
+        </div>
+        <img
+          class="nosotros__imagen__section"
+          src="../imagenes/123.jpg"
+          alt=""
+        />
+      </section>
     </main>
 
-    <footer class="footer pt-1 bg-black b-0 w-100 mt-5">
-      <div class="footer-sm text-white">
-        <div class="container">
-          <div class="row py-4 text-center text-white">
-            <div class="col-lg-5 col-md-6 mb-md-0 fw-semibold">
-              Buscanos en las redes
-            </div>
-            <div class="col-lg-7 col-md-6">
-              <a href=""><i class="fab fa-facebook text-white mx-2"></i></a>
-              <a href=""><i class="fab fa-twitter text-white mx-2"></i></a>
-              <a href=""><i class="fab fa-instagram text-white mx-2"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="footer-bottom py-5">
-        <div class="container">
-          <div class="row text-center text-white">
-            <div class="col-12">
-              <div class="footer-bottom__copy fw-semibold">
-                &copy; Copyright 2022 | AukeL | Todos los derechos reservados |
-                Creada por
-                <a
-                  class="text-decoration-none text-white fw-light"
-                  href="https://www.instagram.com/"
-                  >Romero Natalia</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
+    <footer>
+      <div class="buscanos__redes">Buscanos en las redes</div>
+
+      <!--aca van logos de redes-->
+      <a class="footer__iconos" href="#"
+        ><i class="fa-brands fa-instagram"></i
+      ></a>
+      <a class="footer__iconos" href="#"
+        ><i class="fa-brands fa-facebook-f"></i
+      ></a>
+      <a class="footer__iconos" href="#"
+        ><i class="fa-brands fa-behance"></i
+      ></a>
+
+      <div class="derechos__reservados">
+        © Copyright 2022 | AukeL | Todos los derechos reservados | Creada por
+        <a class="ig__Natalia" href="https://www.instagram.com/"
+          >Romero Natalia</a
+        >
       </div>
     </footer>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
-      integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>

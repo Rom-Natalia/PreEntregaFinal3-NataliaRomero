@@ -1,0 +1,41 @@
+.nosotros__video {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.nosotros__intro__section {
+  display: flex;
+  max-width: 90%;
+  justify-content: space-between;
+  padding: 2rem;
+  flex-wrap: wrap;
+  .nosotros__info__section {
+    width: 40%;
+
+    .boton__inspirate {
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 5px 3px;
+      cursor: pointer;
+      background-color: black;
+      border-radius: 5px;
+    }
+  }
+
+  .nosotros__imagen__section {
+    width: 50%;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+    box-shadow: 0px 10px 10px -6px black;
+  }
+}
+
+.nosotros__intro__section.inspirarte {
+  flex-direction: row-reverse;
+}
