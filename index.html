@@ -58,6 +58,27 @@
               </li>
             </ul>
           </nav>
+
+          <div class="hamburguer__menu">
+            <div id="myLinks">
+              <a href="#news">News</a>
+              <a href="#contact">Contact</a>
+              <a href="#about">About</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+            <script>
+              function myFunction() {
+                var x = document.getElementById("myLinks");
+                if (x.style.display === "block") {
+                  x.style.display = "none";
+                } else {
+                  x.style.display = "block";
+                }
+              }
+            </script>
+          </div>
         </div>
       </div>
     </header>
@@ -66,7 +87,7 @@
       <img class="imagen__puente" src="./imagenes/puente.jpg" alt="" />
 
       <section class="intro__section">
-        <div class="info__section2">
+        <div class="info__section">
           <h1>Somos Aukel</h1>
           <!--descripcion rapida de lo que hacemos-->
           <p>
@@ -77,11 +98,11 @@
             mediante la expresión de imágenes, videos y sonidos.
           </p>
         </div>
-        <img class="imagen__compu" src="./imagenes/compu.jpg" alt="" />
+        <img class="imagen__section" src="./imagenes/compu.jpg" alt="" />
       </section>
 
-      <section class="intro__section2">
-        <div class="info__section3">
+      <section class="intro__section inspirarte">
+        <div class="info__section">
           <h2>¿En qué nos inspiramos?</h2>
           <!--descripcion rapida de inspiracion-->
           <p>
@@ -95,7 +116,7 @@
             ><button class="boton__inspirate">Inspirate</button></a
           >
         </div>
-        <img class="imagen__create" src="./imagenes/create.jpg" alt="" />
+        <img class="imagen__section" src="./imagenes/create.jpg" alt="" />
       </section>
     </main>
 

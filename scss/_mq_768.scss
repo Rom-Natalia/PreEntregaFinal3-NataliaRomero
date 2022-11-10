@@ -1,0 +1,42 @@
+@media screen and (max-width: 968px) {
+  .conteiner__home {
+    .imagen__puente {
+      height: auto;
+    }
+    .intro__section {
+      flex-direction: column-reverse;
+      .info__section {
+        width: 100%;
+      }
+      .imagen__section {
+        width: 100%;
+      }
+    }
+    .intro__section.inspirarte {
+      flex-direction: column-reverse;
+    }
+  }
+
+  .equipo__cards__container {
+    padding: 0;
+
+    .equipo__card {
+      box-sizing: border-box;
+      width: 100%;
+    }
+  }
+
+  .container {
+    display: block;
+
+    .row {
+      display: block;
+      .nav {
+        display: none;
+      }
+      .hamburguer__menu {
+        display: block;
+      }
+    }
+  }
+}
