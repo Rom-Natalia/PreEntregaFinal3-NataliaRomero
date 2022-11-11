@@ -3,7 +3,7 @@
   background-size: 100vw 100vh;
   background-attachment: fixed;
 
-  form {
+  .contacto__form {
     width: 450px;
     margin: auto;
     background: rgba(0, 0, 0, 0.4);
@@ -13,7 +13,7 @@
     border-radius: 7px;
     backdrop-filter: blur(5px);
 
-    h2 {
+    .contacto__h2 {
       color: white;
       text-align: center;
       margin: 0;
@@ -21,7 +21,7 @@
       margin-bottom: 20px;
     }
 
-    input {
+    .contacto__input {
       width: 100%;
       margin-bottom: 20px;
       padding: 7px;
@@ -30,7 +30,7 @@
       border: none;
     }
 
-    textarea {
+    .contacto__textarea {
       min-height: 100px;
       max-height: 200px;
       max-width: 100%;
@@ -42,6 +42,7 @@
       color: white;
       padding: 20px;
       margin-top: 1rem;
+      width: 100%;
     }
 
     #boton:hover {
