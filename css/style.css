@@ -356,6 +356,9 @@ main {
     flex-direction: column-reverse;
   }
   /*SECCION CONTACTO*/
+  .contacto__body .contacto__form {
+    width: 90%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
